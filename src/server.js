@@ -73,4 +73,4 @@ app.listen(port, () => {
 
 setInterval(() => {
    ping("https://rentzenserver.onrender.com/");
-}, 60*1000*14);
+}, 60*1000*10);

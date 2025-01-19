@@ -64,13 +64,14 @@ async function ping(url) {
 app.post("/ping", async (req, res) => {
   const { url } = req.body;
   const statusCode = await ping(url);
-  res.send(statusCode);
+  return (statusCode, "pinged successfully");
 });
 
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
-
+// https://www.youtube.com/watch?v=ogGy2cnP2mE&ab_channel=AthemSaurav
+// https://www.youtube.com/watch?v=6ArTjmUemVo&ab_channel=AthemSaurav
 setInterval(() => {
    ping("https://rentzenserver.onrender.com/");
 }, 60*1000*10);

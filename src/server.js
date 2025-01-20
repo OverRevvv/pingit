@@ -74,4 +74,5 @@ app.listen(port, () => {
 // https://www.youtube.com/watch?v=6ArTjmUemVo&ab_channel=AthemSaurav
 setInterval(() => {
    ping("https://rentzenserver.onrender.com/");
-}, 60*1000*10);
+   console.log("pinged");
+}, 13*60*1000);
